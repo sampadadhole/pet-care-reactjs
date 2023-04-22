@@ -1,0 +1,78 @@
+.footer-wrapper{
+    max-width: 90rem;
+    margin:0 auto;
+}
+
+.subscribe_block {
+  text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+.subscribe_email {
+  border: 0rem;
+  background-color: rgb(248, 243, 243);
+  padding: 0.7rem;
+  border-radius: 10rem 0 0 10rem;
+}
+.subscribe_email_btn {
+  padding: 0.6rem;
+  background-color: #fe5b2e;
+  border: 0rem;
+  color: white;
+  border-radius: 10rem;
+  margin-left: -2rem;
+  cursor: pointer;
+  
+}
+.footer_block{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #faece8;
+    padding: 2rem;
+  }
+  
+  .contact_us{
+    /* display: flex; */
+    grid-column: span 3;
+  }
+  
+  .info_block{
+    grid-column: span 3;
+    text-align: center;
+  }
+  
+  .quick_links{
+    grid-column: span 3;
+  }
+  
+  .help{
+    grid-column: span 3;
+  }
+  
+  .contact_us img{
+    height: 1.5rem;
+  }
+
+  @media screen and (max-width: 44rem) {
+    .footer_block{
+      grid-template-columns: repeat(1, 1fr);
+      padding:1rem;
+    }
+    .contact_us{
+      grid-column: span 1;
+      padding:1rem;
+    }
+    .info_block{
+      grid-column: span 1;
+      padding:1rem;
+    }
+    .quick_links{
+      grid-column: span 1;
+      padding:1rem;
+    }
+    .help{
+      grid-column: span 1;
+      padding:1rem;
+    }
+    
+  }

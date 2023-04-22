@@ -1,0 +1,13 @@
+
+.her-carousel-img{
+   border: 0px solid none;
+   border-radius: 5rem;
+    transition: 0.5s;
+   /* margin-bottom: 20rem;
+   margin-left: 15rem; */
+}
+.carousel-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

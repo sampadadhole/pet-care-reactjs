@@ -1,0 +1,82 @@
+.nav-menu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.navbar-hamburger{
+    display: none;
+}
+.nav-item{
+    margin: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    width: 100%;
+    /* width: 1rem; */
+    /* color: aliceblue; */
+}
+.fa-logo{
+    cursor: pointer;
+}
+.active-page{
+  width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #da7373;
+    margin: 0.7rem auto;
+
+}
+.nav-links:hover{
+    border-bottom: 2px solid #da7373;
+    /* border-radius: 50%; */
+    transition: 0.2s ease-in-out;
+}
+.nav-links{
+   border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80rem;
+    margin: 0 auto;
+    
+}
+.navbar-logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (max-width: 44rem) {
+ 
+    .nav-menu{
+        display: none;
+    }
+    .navbar-hamburger{
+        display: block;
+    }
+    .nav-item{
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .nav-menu.active{
+        display: block;
+    }
+    .navbar-container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .navbar-logo-section{
+        padding: 0 1rem;
+    }
+    .hamburg-button-adjust{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+    

@@ -1,0 +1,52 @@
+
+/* provide styles for the signUp.jsx form */
+.form-group{
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    margin: 2rem auto;
+    background-color: #faf3f0;
+    padding: 2rem;
+    
+}
+.form-group input{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #fae6e0;
+}
+.form-group button{
+    margin: 2.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e9d3cd;
+    background-color: #f77953;
+    color: white;
+}
+.form-group button:hover{
+    background-color: white;
+    color: #f77953;
+}
+
+.form-group select{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #f77953;
+}
+.other-form-group{
+    display: flex;
+    flex-direction: column;
+}
+.invalid-feedback{
+    color: red;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 44rem) {
+  .form-group {
+    max-width: 100%;
+  }
+}
+    
