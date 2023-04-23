@@ -1,0 +1,118 @@
+.about-text-container {
+  /* display: flex; */
+  /* padding-left: 2rem; */
+  margin-left: 12rem;
+}
+.about-heading {
+  margin-right: 0.4rem;
+  color: #f77953;
+}
+.about-text-container span {
+  color: #f77953;
+}
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.about-image-container {
+  animation: morph 5s ease-in-out infinite;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.about-test {
+  max-width: 70rem;
+  margin: 0 auto;
+  background-color: #efb9a9;
+  padding: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.about-test-cards {
+  /* background-color: rgb(239, 215, 211); */
+  max-width: 65rem;
+  display: flex;
+  height: 25rem;
+  margin: 2rem auto;
+  /* margin-left: 1rem; */
+}
+.about-test-card {
+  /* width: 60%; */
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  /* margin: 1rem; */
+  /* margin-right: 1rem; */
+  /* border: 1px solid #f77953; */
+  background-color: rgb(239, 215, 211);
+  border-radius: 2rem;
+  max-width: 20rem;
+margin-left: 1rem;
+}
+.testimonial-img {
+  background-color: #f77953;
+}
+.about-testimonial-text-wrapper{
+  margin-left: 1rem;
+}
+.about-testimonial-text-wrapper p {
+  /* margin-top: 1rem; */
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 44rem) {
+  .about-container {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .about-image-container {
+    margin-left: 0;
+  }
+  .about-text-container {
+    margin-left: 0;
+  }
+  .about-test {
+    margin-top: 0;
+  }
+  .about-test-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    /* margin-left: 3rem; */
+    /* max-width: 90rem; */
+    height: 75rem;
+    align-content: center;
+  }
+  .about-test-card {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-content: center;
+
+  }
+
+}
+  

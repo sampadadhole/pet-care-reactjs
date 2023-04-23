@@ -1,0 +1,230 @@
+/* body {
+  margin: 0;
+  padding: 0;
+
+} */
+
+.home-container {
+  max-width: 80rem;
+  margin: 0 auto;
+
+}
+
+
+.home-heading h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #3b3232;
+  text-align: center;
+  padding-top: 6rem;
+  margin-left: 4rem;
+  text-align: start;
+}
+
+.hero-desc p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #3b3232;
+  text-align: center;
+  padding-top: 1rem;
+  margin-left: 4rem;
+  text-align: start;
+}
+.services-btn {
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  background-image: url("../images/bgpaws.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  background-attachment: fixed;
+  padding: 3rem;
+
+  background-position: center center;
+		animation: move 30s infinite linear;
+		will-change: transform;
+  /* margin-top: 3rem; */
+  /* text-align: center; */
+ 
+}
+@keyframes move {
+	
+	25% {
+		transform: translateY(50px) translateX(0);
+	}
+	
+	50% {
+		transform: translateY(0px) translateX(50px);
+	}
+	
+	75% {
+		transform: translateY(50px) translateX(0);
+	}
+	
+}
+
+.hero-help-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-self: center;
+  justify-self: center;
+  border-top: 1px solid rgb(114, 108, 108);
+  margin-top: 15rem;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+}
+.help-text-section {
+ 
+  text-align: center;
+}
+
+.hero-help-section p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #3b3232;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 0;
+  text-align: center;
+}
+.hero-help-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #3b3232;
+  text-align: center;
+  padding-top: 6rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+.hero-help-img {
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.home-offers-cards-wrapper h1{
+  text-align: center;
+  margin-top: 5rem;
+  font-size:2.5rem;
+  
+}
+
+.home-offers-cards{
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  gap:1rem;
+
+}
+.home-offers-text-wrapper{
+  margin: 1rem;
+}
+.home-offers-card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2rem;
+  /* border: 1px solid rgb(114, 108, 108); */
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 40rem;
+  height: 20rem;
+  background-color: #fcf3f0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 44rem) {
+  .home-wrapper {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .home-container {
+    max-width: 100%;
+  }
+  .home-heading h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .hero-desc p {
+    margin-left: 0;
+    text-align: center;
+  }
+  .services-btn {
+    margin-left: 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .hero-help-section {
+    flex-direction: column;
+    margin-top: 3rem;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 3rem;
+  }
+  .help-text-section {
+    text-align: center;
+  }
+  .hero-help-section p {
+    margin-left: 0;
+    text-align: center;
+  }
+  .hero-help-section h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .hero-help-img {
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .home-offers-cards-wrapper h1{
+    text-align: center;
+    margin-top: 5rem;
+    font-size:2.5rem;
+    
+  }
+  .home-offers-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .home-offers-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    border: 1px solid rgb(114, 108, 108);
+    /* border-radius: 1rem; */
+    padding: 1rem;
+    max-width: 40rem;
+    height: 20rem;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); */
+  }
+
+}

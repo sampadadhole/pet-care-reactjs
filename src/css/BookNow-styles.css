@@ -1,0 +1,100 @@
+/* :root {
+  --primary-light-color: #2196f3;
+  --secondary-light-color: #fff;
+  --background-light-color: #fff;
+
+  --primary-dark-color: #f44336;
+  --secondary-dark-color: #000;
+  --background-dark-color: #222;
+} */
+
+.book.light {
+  --primary-color: #2196f3;
+  --secondary-color: #000;
+  --background-color: #fff;
+  --form-group-color: #faf3f0;
+  --from-group-label: black;
+  --submit-book-now-button: #f77953;
+}
+
+.book.dark {
+  --primary-color: #f44336;
+  --secondary-color: #fff;
+  --background-color: #e3cbc1;
+  --form-group-color: #5b3f32;
+  --from-group-label: white;
+  --submit-book-now-button: fae6e0;
+}
+
+.container-booknow {
+  /* background-color: var(--background-color); */
+  display: flex;
+  flex-direction: column;
+}
+
+.light-dark-svg
+{
+    /* width: 2rem; */
+    height: 2rem;
+    /* margin: 0.5rem; */
+    cursor: pointer;
+}
+/* provide styles for the signUp.jsx form */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  margin: 2rem auto;
+  background-color: var(--form-group-color);
+  /* background-color: #faf3f0; */
+
+  padding: 2rem;
+}
+.form-group input {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #fae6e0;
+}
+.form-group button {
+  margin: 2.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e9d3cd;
+  /* background-color: #f77953; */
+  background-color: var(--submit-book-now-button);
+  color: white;
+}
+.form-group button:hover {
+  background-color: white;
+  color: #f77953;
+}
+.form-group label {
+  /* margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #f77953; */
+  color: var(--from-group-label);
+}
+
+.form-group select {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #f77953;
+}
+.other-form-group {
+  display: flex;
+  flex-direction: column;
+}
+.invalid-feedback {
+  color: red;
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 44rem) {
+  .form-group {
+    max-width: 100%;
+  }
+}
